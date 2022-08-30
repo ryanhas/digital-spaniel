@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { TestimonialsContext, TestimonialsContextProvider } from "./contexts/testimonialsContext";
+import { useContext } from "react";
 
-function App() {
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import Work from "./components/Work";
+import About from "./components/About";
+import Testimonials from "./components/Testimonials";
+import Footer from "./components/Footer";
+import "./styles.css";
+
+export default function App() {
+  const user = useContext(TestimonialsContext);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TestimonialsContextProvider>
+      <div className="App">
+        <Navbar />
+        <Header />
+        <Work />
+        <About />
+        <Testimonials />
+        <Footer />
+      </div>
+    </TestimonialsContextProvider>
   );
 }
-
-export default App;

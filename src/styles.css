@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+@import "./styles/header.css";
+@import "./styles/navbar.css";
+@import "./styles/work.css";
+@import "./styles/carousel.css";
+@import "./styles/card.css";
+
+:root {
+  --link-underline-color: #C0345E;
+  --link-text-color: #19293A;
+  --title-grey: #506473;
+}
+
+body {
+  font-family: "Open Sans";
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}

@@ -1,0 +1,50 @@
+#work {
+    display: flex;
+    background-color: #EDEFF1;
+    height: 700px;
+    width: 100%;
+}
+
+.work-left {
+    width: 50%;
+    padding:5px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.work-left-content {
+    max-width: 400px;
+    color: var(--title-grey);
+    font-size: 21px;
+}
+
+.work-right {
+    width: 50%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    margin-left: 100px;
+    flex-wrap: wrap;
+}
+
+.menu-list {
+    margin-right: 150px;
+    margin-bottom: 20px;
+}
+
+.work-menu-item {
+    color: var(--link-text-color);
+    letter-spacing: 2.1px;
+    font: bold "Poppins";
+    font-size: 21px;
+}
+
+.work-menu-subitem {
+    color: var(--title-grey);
+    font: normal 600 "Open Sans";
+    letter-spacing: 0.53px;
+    font-size: 14px;
+    cursor: pointer;
+}

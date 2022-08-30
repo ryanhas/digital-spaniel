@@ -1,0 +1,49 @@
+.card {
+    height: 500px;
+    max-width: 350px;
+    min-width: 250px;
+    padding: 4rem;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #E2E4E6;
+    color: #506473;
+}
+
+.card-photo {
+    height: 96px;
+    margin-top: 30px;
+}
+
+.card .card-author, .card-role {
+    font: normal;
+    font-size: 18px;
+}
+
+.card .card-author {
+    font: bold;
+}
+
+.card-comment {
+    font: italic 600 30px/45px Open Sans;
+    line-height: 1.6;
+}
+
+.card .card-comment {
+    font-size: 20px;
+}
+
+.card-active {
+    background-color: #19293A;
+    color: #FFFFFF;
+    height: 570px;
+}
+
+.card-active .card-comment {
+    font-size: 22px ;
+}
+
+.card-active img {
+    height: 128px;
+}
+
+/* Todo: responsive card's size */
